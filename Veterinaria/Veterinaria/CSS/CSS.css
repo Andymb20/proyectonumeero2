@@ -1,0 +1,145 @@
+﻿/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Estilo de letra */
+    font-size: 20px; /* Tamaño de letra */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #008080;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 5px solid #006666;
+}
+
+    header h1 {
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 36px; /* Tamaño de letra del título */
+    }
+
+/* Estilos para el menú horizontal */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff; /* Fondo blanco */
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+        nav ul li {
+            position: relative; /* Asegura que los submenús se muestren correctamente */
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #006666;
+                padding: 10px 15px;
+                border-radius: 5px;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+                nav ul li a:hover {
+                    background-color: #99CCCC; /* Color al pasar el mouse */
+                    color: #006666;
+                }
+
+        /* Estilos para el menú desplegable */
+        nav ul ul {
+            display: none; /* Oculta inicialmente los submenús */
+            position: absolute;
+            top: calc(100% + 5px); /* Alinea el submenú debajo del elemento padre */
+            left: 0;
+            background-color: #fff; /* Fondo blanco */
+            border-radius: 10px; /* Añade esquinas redondeadas */
+            z-index: 1; /* Asegura que el submenú esté por encima de otros elementos */
+        }
+
+        nav ul li:hover > ul {
+            display: block; /* Muestra el submenú al pasar el ratón sobre el elemento padre */
+        }
+
+        nav ul ul li {
+            width: 100%; /* Ajusta el ancho del submenú al ancho del menú */
+        }
+
+            nav ul ul li a {
+                padding: 10px 20px; /* Ajusta el relleno del submenú */
+            }
+
+        /* Estilos adicionales para el menú de Reportes */
+        nav ul ul ul {
+            left: calc(100% + 5px); /* Desplaza el submenú hacia la derecha del menú padre */
+            top: 0;
+            border-radius: 10px; /* Añade esquinas redondeadas */
+        }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 40px;
+    background-color: #b3b3b3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+    /* Agregando la imagen de fondo al contenido principal */
+    background: url('https://img.freepik.com/vector-premium/fondo-peluqueria-perros-peluqueria-peluqueria-perros-tienda-mascotas-ilustracion-vectorial_195968-415.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #001f3f; /* Color de texto azul oscuro */
+    font-size: 36px; /* Tamaño de letra más grande */
+    line-height: 1.6; /* Altura de línea */
+    text-align: center; /* Alinear el texto al centro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #006666;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #004d4d;
+}
+
+    footer p {
+        margin: 0;
+    }

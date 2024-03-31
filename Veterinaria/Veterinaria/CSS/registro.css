@@ -1,0 +1,128 @@
+﻿/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Estilo de letra */
+    font-size: 20px; /* Tamaño de letra */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.encabezado-h2 {
+    background-color: #008080; /* Color de fondo */
+    color: #ecf0f1; /* Color del texto */
+    text-align: center; /* Alineación centrada del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 20px; /* Margen inferior */
+}
+/* Estilos para el encabezado */
+header {
+    background-color: #008080;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 5px solid #006666;
+}
+
+    header h1 {
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 36px; /* Tamaño de letra del título */
+    }
+
+/* Estilos para el formulario de registro */
+.registro-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+    width: 80%; /* Ancho del formulario */
+    margin: 0 auto; /* Centrar el formulario */
+    margin-top: 20px; /* Espacio superior */
+}
+
+    .registro-form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .registro-form .txt-input {
+        width: calc(100% - 22px); /* Ancho del input teniendo en cuenta el padding */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .registro-form .dropdown {
+        width: calc(100% - 22px); /* Ancho del dropdown teniendo en cuenta el padding */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .registro-form .btn-registrar {
+        background-color: #008080;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .registro-form .btn-registrar:hover {
+            background-color: #006666;
+        }
+
+/* Estilos para el contenido principal */
+main {
+    padding: 40px;
+    background-color: #b3b3b3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+    /* Agregando la imagen de fondo al contenido principal */
+    background: url('https://img.freepik.com/vector-premium/fondo-peluqueria-perros-peluqueria-peluqueria-perros-tienda-mascotas-ilustracion-vectorial_195968-415.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #001f3f; /* Color de texto azul oscuro */
+    font-size: 36px; /* Tamaño de letra más grande */
+    line-height: 1.6; /* Altura de línea */
+    text-align: center; /* Alinear el texto al centro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+.gridview {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+    .gridview th, .gridview td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    .gridview th {
+        background-color: #f2f2f2;
+        text-align: left;
+    }
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #006666;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #004d4d;
+}
+
+    footer p {
+        margin: 0;
+    }

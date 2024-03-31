@@ -1,0 +1,84 @@
+﻿/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Estilo de letra */
+    font-size: 16px; /* Tamaño de letra */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #008080;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 5px solid #006666;
+}
+
+    header h1 {
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 36px; /* Tamaño de letra del título */
+    }
+
+/* Estilos para el contenido principal */
+main {
+    padding: 40px;
+    background-color: #b3b3b3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+    color: #001f3f; /* Color de texto azul oscuro */
+    font-size: 18px; /* Tamaño de letra */
+    line-height: 1.6; /* Altura de línea */
+    text-align: center; /* Alinear el texto al centro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #006666;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 5px solid #004d4d;
+}
+
+    footer p {
+        margin: 0;
+    }
+
+/* Estilos para los controles del formulario */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Hace que el padding y el borde se sumen al ancho del elemento */
+}
+
+button {
+    background-color: #008080;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #006666;
+    }

@@ -1,0 +1,15 @@
+﻿/* Estilos para el gridview */
+.gridview {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .gridview th, .gridview td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .gridview th {
+        background-color: #f2f2f2;
+    }
